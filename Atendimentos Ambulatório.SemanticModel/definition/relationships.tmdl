@@ -1,0 +1,5 @@
+relationship 31e020dd-3971-4308-9bf7-524e64ff88c7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Atendimentos.DATA_ATENDIMENTO
+	toColumn: LocalDateTable_54de5886-594b-4cde-9024-d896c3808dc2.Date
+

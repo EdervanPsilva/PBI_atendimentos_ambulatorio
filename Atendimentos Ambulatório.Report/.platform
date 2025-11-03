@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Atendimentos Ambulatório"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "333f73a0-1a5a-49b8-a046-3617b85ea2a2"
+  }
+}

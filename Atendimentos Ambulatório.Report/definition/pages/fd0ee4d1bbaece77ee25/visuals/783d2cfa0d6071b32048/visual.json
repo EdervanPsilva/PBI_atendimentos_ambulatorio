@@ -1,0 +1,342 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "783d2cfa0d6071b32048",
+  "position": {
+    "x": 0,
+    "y": 619.27404718693276,
+    "z": 0,
+    "height": 300.25408348457347,
+    "width": 1857.8221415607984
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atendimentos"
+                    }
+                  },
+                  "Property": "EMPRESA"
+                }
+              },
+              "queryRef": "Atendimentos.EMPRESA",
+              "nativeQueryRef": "EMPRESA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atendimentos"
+                    }
+                  },
+                  "Property": "AREA"
+                }
+              },
+              "queryRef": "Atendimentos.AREA",
+              "nativeQueryRef": "AREA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atendimentos"
+                    }
+                  },
+                  "Property": "MATRICULA"
+                }
+              },
+              "queryRef": "Atendimentos.MATRICULA",
+              "nativeQueryRef": "MATRICULA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atendimentos"
+                    }
+                  },
+                  "Property": "NOME"
+                }
+              },
+              "queryRef": "Atendimentos.NOME",
+              "nativeQueryRef": "NOME"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atendimentos"
+                    }
+                  },
+                  "Property": "CARGO"
+                }
+              },
+              "queryRef": "Atendimentos.CARGO",
+              "nativeQueryRef": "CARGO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atendimentos"
+                    }
+                  },
+                  "Property": "DATA_ATENDIMENTO"
+                }
+              },
+              "queryRef": "Atendimentos.DATA_ATENDIMENTO",
+              "nativeQueryRef": "DATA_ATENDIMENTO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atendimentos"
+                    }
+                  },
+                  "Property": "OCORRENCIA"
+                }
+              },
+              "queryRef": "Atendimentos.OCORRENCIA",
+              "nativeQueryRef": "OCORRENCIA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atendimentos"
+                    }
+                  },
+                  "Property": "CAT_ATENDIMENTO"
+                }
+              },
+              "queryRef": "Atendimentos.CAT_ATENDIMENTO",
+              "nativeQueryRef": "CAT_ATENDIMENTO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atendimentos"
+                    }
+                  },
+                  "Property": "MEDICO"
+                }
+              },
+              "queryRef": "Atendimentos.MEDICO",
+              "nativeQueryRef": "MEDICO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atendimentos"
+                    }
+                  },
+                  "Property": "TIP_ATENDIMENTO"
+                }
+              },
+              "queryRef": "Atendimentos.TIP_ATENDIMENTO",
+              "nativeQueryRef": "TIP_ATENDIMENTO"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Atendimentos"
+                  }
+                },
+                "Property": "EMPRESA"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "213.94192487512694D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Atendimentos.MEDICO"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0cddfc8cd33fec85e5b9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "EMPRESA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "537a57bfbdd20ec407d2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "AREA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e90a22865afe53a04cd8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "MATRICULA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ff3e221510357ca81e84",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "NOME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a7364e0d5dbaff8f87e1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "CARGO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "71bc907c9c5f4d57a3fe",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "DATA_ATENDIMENTO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b37fba0ffef41fd2b4cc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "OCORRENCIA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a3948ba818bd9e988ffc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "CAT_ATENDIMENTO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3b7ef9dc615aedfdbf80",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "MEDICO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "26a3a185825491a962c3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "TIP_ATENDIMENTO"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

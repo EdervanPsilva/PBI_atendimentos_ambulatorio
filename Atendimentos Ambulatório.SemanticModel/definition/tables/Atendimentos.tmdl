@@ -1,0 +1,122 @@
+table Atendimentos
+	lineageTag: 4e98bc44-8d53-43ea-9801-b2383f67640b
+
+	measure total_atendimentos = COUNTROWS(Atendimentos)
+		formatString: 0
+		lineageTag: 12a7ed7e-6017-4463-9b2a-63b3d686a6f4
+
+	measure qtd_colaboradores = DISTINCTCOUNT(Atendimentos[MATRICULA])
+		formatString: 0
+		lineageTag: 0f341751-4925-4597-8f18-375d95df80e8
+
+	column EMPRESA
+		dataType: string
+		lineageTag: 4dd11d19-ef1d-4afa-a45e-f72dda1e9823
+		summarizeBy: none
+		sourceColumn: EMPRESA
+
+		annotation SummarizationSetBy = Automatic
+
+	column AREA
+		dataType: string
+		lineageTag: fc4e6643-a17a-42e2-962b-769974baa06f
+		summarizeBy: none
+		sourceColumn: AREA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MATRICULA
+		dataType: string
+		lineageTag: a654a887-493b-4e3f-a526-1cda0ca8eac8
+		summarizeBy: none
+		sourceColumn: MATRICULA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: e60c4b72-179a-4a47-be71-8551668d0905
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATA_ATENDIMENTO
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 92fee8a7-6356-4357-89e5-fb37acf0c818
+		summarizeBy: none
+		sourceColumn: DATA_ATENDIMENTO
+
+		variation Variation
+			isDefault
+			relationship: 31e020dd-3971-4308-9bf7-524e64ff88c7
+			defaultHierarchy: LocalDateTable_54de5886-594b-4cde-9024-d896c3808dc2.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CARGO
+		dataType: string
+		lineageTag: 7d9e4872-a111-4ffc-9472-472242662bd5
+		summarizeBy: none
+		sourceColumn: CARGO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODOCO
+		dataType: string
+		lineageTag: 294be615-44c3-439e-9889-e91482870625
+		summarizeBy: none
+		sourceColumn: CODOCO
+
+		annotation SummarizationSetBy = Automatic
+
+	column OCORRENCIA
+		dataType: string
+		lineageTag: d79c9aff-f59b-4dc8-a223-eadc7a708dad
+		summarizeBy: none
+		sourceColumn: OCORRENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MEDICO
+		dataType: string
+		lineageTag: 3879517c-11ed-46de-9823-17a7f8eb7ee1
+		summarizeBy: none
+		sourceColumn: MEDICO
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIP_ATENDIMENTO
+		dataType: string
+		lineageTag: 43b537e6-7736-4542-9dc8-3bf7d4a065bc
+		summarizeBy: none
+		sourceColumn: TIP_ATENDIMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CAT_ATENDIMENTO
+		dataType: string
+		lineageTag: 95097754-2a4d-46d9-93ad-14cf06dfaab6
+		summarizeBy: none
+		sourceColumn: CAT_ATENDIMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Atendimentos = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\c1010568\Documents\PBI_atendimentos_ambulatorio\Atendimentos_ambulatório.xlsx"), null, true),
+				    Table1_Table = Fonte{[Item="Table1",Kind="Table"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Table1_Table,{{"EMPRESA", type text}, {"AREA", type text}, {"MATRICULA", type text}, {"NOME", type text}, {"DATA_ATENDIMENTO", type date}, {"CARGO", type text}, {"CODOCO", type text}, {"OCORRENCIA", type text}, {"MEDICO", type text}, {"TIP_ATENDIMENTO", type text}, {"CAT_ATENDIMENTO", type text}}),
+				    #"Texto em Maiúscula" = Table.TransformColumns(#"Tipo Alterado",{{"TIP_ATENDIMENTO", Text.Upper, type text}, {"CAT_ATENDIMENTO", Text.Upper, type text}})
+				in
+				    #"Texto em Maiúscula"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
