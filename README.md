@@ -2,7 +2,7 @@
 Demonstração de relatório em PowerBI para acompanhamento de atendimentos em ambulatórios
 Base de dados será em excel com dados fictícios apenas para demostração de relatório interativo desenvolvido com PowerBI. (1801 linhas)
 
-![Descrição da imagem](assets/Plan_fundo.png)
+![Descrição da imagem](Plan_fundo.png)
 
 ## Tratamentos Power Query
 
