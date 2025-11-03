@@ -37,6 +37,17 @@
           "type": "BaseTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Plan_fundo05638381077925403.png",
+          "path": "Plan_fundo05638381077925403.png",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "settings": {

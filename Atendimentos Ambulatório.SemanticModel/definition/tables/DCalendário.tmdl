@@ -1,0 +1,62 @@
+table DCalendário
+	lineageTag: 2e7107a5-35d2-43d3-ba80-7dc63b367298
+
+	column Date
+		formatString: Short Date
+		lineageTag: 8c6c966c-46eb-461c-9ec9-f8602532a3dd
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 7f33befd-7f54-46b7-9827-ba1caa76b738
+			defaultHierarchy: LocalDateTable_92b8bd42-012f-4309-b5ba-1bee3ac2089f.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		formatString: 0
+		lineageTag: f314495f-d44b-4cca-b379-9b345b1551b6
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mês
+		formatString: 0
+		lineageTag: 6a459e4a-cd66-4d3b-bee6-d37119c2573f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Mês]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome do Mês'
+		lineageTag: e7464b0c-6852-476f-a711-4c5b64749e5f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Nome do Mês]
+		sortByColumn: Mês
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DCalendário = calculated
+		mode: import
+		source = ```
+				ADDCOLUMNS(
+				    CALENDAR(DATE(2025,01,01),DATE(2025,12,01))
+				    ,"Ano",YEAR(
+				        [Date]),
+				        "Mês",
+				        MONTH([Date]),
+				        "Nome do Mês",
+				        UPPER(FORMAT([Date],
+				        "MMM")))
+				    
+				    
+				```
+
+	annotation PBI_Id = 6adc49884dd1423b88e04231d9fe117d
+

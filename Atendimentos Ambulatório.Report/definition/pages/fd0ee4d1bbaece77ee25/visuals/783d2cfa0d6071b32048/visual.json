@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "783d2cfa0d6071b32048",
   "position": {
-    "x": 0,
-    "y": 619.27404718693276,
+    "x": 7.7777777777777777,
+    "y": 603.33333333333337,
     "z": 0,
-    "height": 300.25408348457347,
-    "width": 1857.8221415607984
+    "height": 316.66666666666669,
+    "width": 1864.4444444444443
   },
   "visual": {
     "visualType": "tableEx",
@@ -40,7 +40,8 @@
                 }
               },
               "queryRef": "Atendimentos.AREA",
-              "nativeQueryRef": "AREA"
+              "nativeQueryRef": "ÁREA",
+              "displayName": "ÁREA"
             },
             {
               "field": {
@@ -54,7 +55,8 @@
                 }
               },
               "queryRef": "Atendimentos.MATRICULA",
-              "nativeQueryRef": "MATRICULA"
+              "nativeQueryRef": "MATRÍCULA",
+              "displayName": "MATRÍCULA"
             },
             {
               "field": {
@@ -96,7 +98,8 @@
                 }
               },
               "queryRef": "Atendimentos.DATA_ATENDIMENTO",
-              "nativeQueryRef": "DATA_ATENDIMENTO"
+              "nativeQueryRef": "DATA ATENDIMENTO",
+              "displayName": "DATA ATENDIMENTO"
             },
             {
               "field": {
@@ -110,7 +113,8 @@
                 }
               },
               "queryRef": "Atendimentos.OCORRENCIA",
-              "nativeQueryRef": "OCORRENCIA"
+              "nativeQueryRef": "OCORRÊNCIA",
+              "displayName": "OCORRÊNCIA"
             },
             {
               "field": {
@@ -124,7 +128,8 @@
                 }
               },
               "queryRef": "Atendimentos.CAT_ATENDIMENTO",
-              "nativeQueryRef": "CAT_ATENDIMENTO"
+              "nativeQueryRef": "CATEGORIA",
+              "displayName": "CATEGORIA"
             },
             {
               "field": {
@@ -138,7 +143,8 @@
                 }
               },
               "queryRef": "Atendimentos.MEDICO",
-              "nativeQueryRef": "MEDICO"
+              "nativeQueryRef": "ATENDENTE",
+              "displayName": "ATENDENTE"
             },
             {
               "field": {
@@ -152,7 +158,8 @@
                 }
               },
               "queryRef": "Atendimentos.TIP_ATENDIMENTO",
-              "nativeQueryRef": "TIP_ATENDIMENTO"
+              "nativeQueryRef": "TIPO ATENDIMENTO",
+              "displayName": "TIPO ATENDIMENTO"
             }
           ]
         }
@@ -167,10 +174,10 @@
                     "Entity": "Atendimentos"
                   }
                 },
-                "Property": "EMPRESA"
+                "Property": "DATA_ATENDIMENTO"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -182,13 +189,173 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "213.94192487512694D"
+                  "Value": "241.37850932485776D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "Atendimentos.MEDICO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "84.85714285714286D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Atendimentos.EMPRESA"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "232.57142857142856D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Atendimentos.TIP_ATENDIMENTO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "292.66987671950966D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Atendimentos.CARGO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "96.71428571428572D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Atendimentos.AREA"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "123.14285714285714D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Atendimentos.MATRICULA"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "311.42857142857144D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Atendimentos.NOME"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "129.30630942447195D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Atendimentos.CAT_ATENDIMENTO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "200.3351571352207D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Atendimentos.OCORRENCIA"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       ]
@@ -209,7 +376,8 @@
             "Property": "EMPRESA"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "isHiddenInViewMode": true
       },
       {
         "name": "537a57bfbdd20ec407d2",
@@ -223,7 +391,8 @@
             "Property": "AREA"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "isHiddenInViewMode": true
       },
       {
         "name": "e90a22865afe53a04cd8",
@@ -237,7 +406,8 @@
             "Property": "MATRICULA"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "isHiddenInViewMode": true
       },
       {
         "name": "ff3e221510357ca81e84",
@@ -251,7 +421,8 @@
             "Property": "NOME"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "isHiddenInViewMode": true
       },
       {
         "name": "a7364e0d5dbaff8f87e1",
@@ -265,7 +436,8 @@
             "Property": "CARGO"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "isHiddenInViewMode": true
       },
       {
         "name": "71bc907c9c5f4d57a3fe",
@@ -279,7 +451,8 @@
             "Property": "DATA_ATENDIMENTO"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "isHiddenInViewMode": true
       },
       {
         "name": "b37fba0ffef41fd2b4cc",
@@ -293,7 +466,8 @@
             "Property": "OCORRENCIA"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "isHiddenInViewMode": true
       },
       {
         "name": "a3948ba818bd9e988ffc",
@@ -307,7 +481,8 @@
             "Property": "CAT_ATENDIMENTO"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "isHiddenInViewMode": true
       },
       {
         "name": "3b7ef9dc615aedfdbf80",
@@ -321,7 +496,8 @@
             "Property": "MEDICO"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "isHiddenInViewMode": true
       },
       {
         "name": "26a3a185825491a962c3",
@@ -335,7 +511,8 @@
             "Property": "TIP_ATENDIMENTO"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "isHiddenInViewMode": true
       }
     ]
   }

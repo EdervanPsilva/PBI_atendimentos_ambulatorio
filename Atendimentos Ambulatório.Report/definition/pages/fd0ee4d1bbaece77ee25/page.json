@@ -5,6 +5,147 @@
   "displayOption": "FitToPage",
   "height": 920,
   "width": 1880,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6780779e07d260f1cc5e",
+        "displayName": "Empresa",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "EMPRESA"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "863cdb272afb331996cd",
+        "displayName": "Área",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "AREA"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "294b76492c3eb2200ce5",
+        "displayName": "Cargo",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "CARGO"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "c025e5ff6b4348018e8b",
+        "displayName": "Colaborador",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "NOME"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "1709292475e77876eb2f",
+        "displayName": "Atendente",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "CAT_ATENDIMENTO"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "5c67fcadaa0f18b1a2fa",
+        "displayName": "Ocorrência",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "OCORRENCIA"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "e2ae6ccca0b0f0fd2e0d",
+        "displayName": "Tipo Atendimento",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "TIP_ATENDIMENTO"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "273d5cf1058a9f4c84cc",
+        "displayName": "Data Atendimento",
+        "ordinal": 7,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atendimentos"
+              }
+            },
+            "Property": "DATA_ATENDIMENTO"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
   "objects": {
     "displayArea": [
       {
@@ -18,6 +159,271 @@
           }
         }
       }
+    ],
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Plan_fundo.png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "Plan_fundo05638381077925403.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "212L"
+              }
+            }
+          }
+        }
+      }
     ]
-  }
+  },
+  "visualInteractions": [
+    {
+      "source": "5895e03cd5c5b02de87e",
+      "target": "72284d791927be883519",
+      "type": "DataFilter"
+    },
+    {
+      "source": "5895e03cd5c5b02de87e",
+      "target": "0bb9ed19816e8a577258",
+      "type": "DataFilter"
+    },
+    {
+      "source": "5895e03cd5c5b02de87e",
+      "target": "0e8ea6c3282094c5ec89",
+      "type": "DataFilter"
+    },
+    {
+      "source": "5895e03cd5c5b02de87e",
+      "target": "b6a95c85452852a5a49e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "5895e03cd5c5b02de87e",
+      "target": "9d542d8f92bb18f257c8",
+      "type": "DataFilter"
+    },
+    {
+      "source": "72284d791927be883519",
+      "target": "5895e03cd5c5b02de87e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "72284d791927be883519",
+      "target": "0bb9ed19816e8a577258",
+      "type": "DataFilter"
+    },
+    {
+      "source": "72284d791927be883519",
+      "target": "0e8ea6c3282094c5ec89",
+      "type": "DataFilter"
+    },
+    {
+      "source": "72284d791927be883519",
+      "target": "9d542d8f92bb18f257c8",
+      "type": "DataFilter"
+    },
+    {
+      "source": "72284d791927be883519",
+      "target": "b6a95c85452852a5a49e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0bb9ed19816e8a577258",
+      "target": "5895e03cd5c5b02de87e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0bb9ed19816e8a577258",
+      "target": "72284d791927be883519",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0bb9ed19816e8a577258",
+      "target": "0e8ea6c3282094c5ec89",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0bb9ed19816e8a577258",
+      "target": "9d542d8f92bb18f257c8",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0bb9ed19816e8a577258",
+      "target": "b6a95c85452852a5a49e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0e8ea6c3282094c5ec89",
+      "target": "5895e03cd5c5b02de87e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0e8ea6c3282094c5ec89",
+      "target": "72284d791927be883519",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0e8ea6c3282094c5ec89",
+      "target": "0bb9ed19816e8a577258",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0e8ea6c3282094c5ec89",
+      "target": "9d542d8f92bb18f257c8",
+      "type": "DataFilter"
+    },
+    {
+      "source": "0e8ea6c3282094c5ec89",
+      "target": "b6a95c85452852a5a49e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9d542d8f92bb18f257c8",
+      "target": "5895e03cd5c5b02de87e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9d542d8f92bb18f257c8",
+      "target": "72284d791927be883519",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9d542d8f92bb18f257c8",
+      "target": "0bb9ed19816e8a577258",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9d542d8f92bb18f257c8",
+      "target": "0e8ea6c3282094c5ec89",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9d542d8f92bb18f257c8",
+      "target": "b6a95c85452852a5a49e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b6a95c85452852a5a49e",
+      "target": "9d542d8f92bb18f257c8",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b6a95c85452852a5a49e",
+      "target": "0e8ea6c3282094c5ec89",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b6a95c85452852a5a49e",
+      "target": "0bb9ed19816e8a577258",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b6a95c85452852a5a49e",
+      "target": "72284d791927be883519",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b6a95c85452852a5a49e",
+      "target": "5895e03cd5c5b02de87e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "8c904dd62b181c1edc9e",
+      "target": "b6a95c85452852a5a49e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "8c904dd62b181c1edc9e",
+      "target": "9d542d8f92bb18f257c8",
+      "type": "DataFilter"
+    },
+    {
+      "source": "8c904dd62b181c1edc9e",
+      "target": "0e8ea6c3282094c5ec89",
+      "type": "DataFilter"
+    },
+    {
+      "source": "8c904dd62b181c1edc9e",
+      "target": "0bb9ed19816e8a577258",
+      "type": "DataFilter"
+    },
+    {
+      "source": "8c904dd62b181c1edc9e",
+      "target": "72284d791927be883519",
+      "type": "DataFilter"
+    },
+    {
+      "source": "8c904dd62b181c1edc9e",
+      "target": "5895e03cd5c5b02de87e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "783d2cfa0d6071b32048",
+      "target": "b6a95c85452852a5a49e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "783d2cfa0d6071b32048",
+      "target": "9d542d8f92bb18f257c8",
+      "type": "DataFilter"
+    },
+    {
+      "source": "783d2cfa0d6071b32048",
+      "target": "0e8ea6c3282094c5ec89",
+      "type": "DataFilter"
+    },
+    {
+      "source": "783d2cfa0d6071b32048",
+      "target": "0bb9ed19816e8a577258",
+      "type": "DataFilter"
+    },
+    {
+      "source": "783d2cfa0d6071b32048",
+      "target": "72284d791927be883519",
+      "type": "DataFilter"
+    },
+    {
+      "source": "783d2cfa0d6071b32048",
+      "target": "5895e03cd5c5b02de87e",
+      "type": "DataFilter"
+    }
+  ]
 }

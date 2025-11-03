@@ -1,5 +1,14 @@
-relationship 31e020dd-3971-4308-9bf7-524e64ff88c7
+relationship fcb770c3-5af3-4e93-994e-23a95e433ceb
 	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Ultima Atualização'.'Ultima Atualização'
+	toColumn: LocalDateTable_bdc7ab9d-caf1-4631-9264-c1393a8a658a.Date
+
+relationship 7f33befd-7f54-46b7-9827-ba1caa76b738
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DCalendário.Date
+	toColumn: LocalDateTable_92b8bd42-012f-4309-b5ba-1bee3ac2089f.Date
+
+relationship f80ffe13-4f08-e454-8b33-26329400a19c
 	fromColumn: Atendimentos.DATA_ATENDIMENTO
-	toColumn: LocalDateTable_54de5886-594b-4cde-9024-d896c3808dc2.Date
+	toColumn: DCalendário.Date
 

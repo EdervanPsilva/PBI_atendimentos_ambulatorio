@@ -1,0 +1,61 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 125,
+            "y": 261
+          },
+          "nodeIndex": "Atendimentos",
+          "nodeLineageTag": "4e98bc44-8d53-43ea-9801-b2383f67640b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 109,
+            "y": 84
+          },
+          "nodeIndex": "Ultima Atualização",
+          "nodeLineageTag": "f1c66170-314d-4c25-be11-891504d89574",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 500,
+            "y": 236
+          },
+          "nodeIndex": "DCalendário",
+          "nodeLineageTag": "2e7107a5-35d2-43d3-ba80-7dc63b367298",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}
